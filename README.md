@@ -3,10 +3,10 @@
 webpack `chunkhash` algorithm does not take is consideration ids used by `DllReferencePlugin` to point to DLL modules located on external bundle.
 
 * *case 1*: 
-app references the `jquery` library that is bundled in the `dll/dist/lib.bundle.js` with the id=1 => the generated bundle has the hash `55916f0def9e33032675`
+app references the `jquery` library that is bundled in the `dll/dist/lib.bundle.js` with the id=1 => the generated bundle has the hash `3831aaef113a5b3a187a`
 
 * *case 2*: 
-app references the `jquery` library that is bundled in the `dll/dist/lib.bundle.js` with the id=4 => the generated bundle has the hash `55916f0def9e33032675`
+app references the `jquery` library that is bundled in the `dll/dist/lib.bundle.js` with the id=4 => the generated bundle has the hash `3831aaef113a5b3a187a`
 
 * expected result:
 The two bundles must have different hashes since they have different content.
