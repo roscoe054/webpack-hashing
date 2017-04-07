@@ -1,6 +1,17 @@
 var webpack = require('webpack');
 var path = require('path');
 
+/*
+The fix :
+
+var DelegatedModule = require('webpack/lib/DelegatedModule');
+var Module = require('webpack/lib/Module');
+DelegatedModule.prototype.updateHash = function(hash) {
+	hash.update(this.identifier() + "");
+	Module.prototype.updateHash.call(this, hash);
+};*/
+
+
 module.exports = {
   entry: {
     app: './src/app'
@@ -15,6 +26,6 @@ module.exports = {
   output: {
         path: path.resolve(__dirname, "./dist/"),
         publicPath: "../",
-        filename: "[name].bundle.[hash].js"
+        filename: "[name].bundle.[chunkhash].js"
     }
 }
