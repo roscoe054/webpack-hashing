@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "cd ../dll && yarn build && cd ../app && yarn install && webpack"
+    "build": "cd ../dll && yarn build && cd ../app && yarn install --ignore-engines && webpack"
   },
   "devDependencies": {
-    "webpack": "1.12.14"
+    "webpack": "^2.3.3"
   },
   "dependencies": {
     "jquery": "^3.2.1"
