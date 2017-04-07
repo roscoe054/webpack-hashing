@@ -4,13 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "rm -rf dist && webpack"
   },
   "devDependencies": {
     "webpack": "1.12.14"
   },
   "dependencies": {
-    "jquery": "^3.2.1",
-    "knockout": "^3.4.2"
+    "jquery": "^3.2.1"
   }
 }
