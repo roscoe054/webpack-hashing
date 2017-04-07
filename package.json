@@ -1,0 +1,9 @@
+{
+  "name": "webpack-hashing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "cd case1/app && yarn build && cd ../../case2/app && yarn build"
+  }
+}

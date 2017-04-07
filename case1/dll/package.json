@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "yarn install && rm -rf dist && webpack"
+    "build": "yarn install && webpack"
   },
   "devDependencies": {
     "webpack": "1.12.14"
