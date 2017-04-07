@@ -3,7 +3,7 @@ var path = require('path');
 
 module.exports = {
   entry: {
-    lib: [ 'jquery' ]
+    lib: [ 'knockout', 'jquery' ]
   },
 
   plugins: [
